@@ -1,10 +1,12 @@
 def numIdenticalPairs(self, nums: List[int]) -> int:
-count=0
-for m in range(len(nums)):
-for n in range(m+1,len(nums)):
-if nums[m]==nums[n]:
-count+=1
-return count
+  count=0
+  for m in range(len(nums)):
+    for n in range(m+1,len(nums)):
+       if nums[m]==nums[n]:
+         count+=1
+  return count
+
+***********************
 
 def numIdenticalPairs(self, nums: List[int]) -> int:
   c=0
