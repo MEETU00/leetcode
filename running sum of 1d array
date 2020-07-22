@@ -1,31 +1,21 @@
-s = 0
-	for i in range(len(nums)):
-		s+=nums[i]
-		nums[i] = s
-	return numsclass Solution:
-    def runningSum(self, nums: List[int]) -> List[int]:
-        nums=list(map(int,input().split()))
-        sum=0
-        for num in nums:
-            sum+=num
-        return sum    
+   def runningSum(self, nums: List[int]) -> List[int]:
+          new_list = []
+          j = 0
+          for i in nums:
+             j += i
+             new_list.append(j)
+          return new_list
+*********************
 
-
-
-        new_list = []
-        j = 0
-        for i in nums:
-            j += i
-            new_list.append(j)
-        return new_list
-
+   def runningSum(self, nums: List[int]) -> List[int]:
         x=0
         for i in range(0,len(nums)):
             nums[i]+=x
             x=nums[i]
         return nums
         
-
+ ****************
+ def runningSum(self, nums: List[int]) -> List[int]:
         s = 0
 	for i in range(len(nums)):
 		s+=nums[i]
