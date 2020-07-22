@@ -5,7 +5,7 @@
              j += i
              new_list.append(j)
           return new_list
-*********************
+ ******************
 
    def runningSum(self, nums: List[int]) -> List[int]:
         x=0
