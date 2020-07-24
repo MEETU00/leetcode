@@ -1,0 +1,30 @@
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        return [x for i,j in zip(nums[:n], nums[n:]) for x in (i,j)]
+        
+        class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        arr = []
+        for x in range(n):
+            arr.append(nums[x])
+            arr.append(nums[n+x])
+        return arr
+
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        ## APPROACH : GREEDY ##
+        ans = []
+        for i in range(n):
+            ans.append(nums[i])
+            ans.append(nums[i+n])
+        return ans
+        
+        
+         def shuffle(self, nums: List[int], n: int) -> List[int]:
+        ans = []
+        count = n
+        for i in range(n):
+            ans.append(nums[i])
+            ans.append(nums[count])
+            count += 1
+        return ans
