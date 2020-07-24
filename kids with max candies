@@ -1,0 +1,21 @@
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        return [candy + extraCandies >= max(candies) for candy in candies]
+        
+**********************       
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        highest = max(candies)
+        answer = list()
+        for i in candies:
+            if (i + extraCandies) >= highest:
+                answer.append(True)
+                continue
+            answer.append(False)
+        return answer
+        
+***********************        
+        return [max(candies) <= candies[i] + extraCandies for i in range(len(candies))]
+        
+**********************        
+        return list(map(lambda x: x + extraCandies >= max(candies), candies))
