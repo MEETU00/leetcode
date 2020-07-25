@@ -9,5 +9,4 @@ class Solution:
                 
             numi +=1
        
-       
        return numi
