@@ -1,0 +1,11 @@
+class Solution:
+    def restoreString(self, s: str, indices: List[int]) -> str:
+        di = {}
+        for i in range(len(s)):
+            di[indices[i]] = s[i]
+			#The key of the dictionary di is the index in indices, and the value is the is the character in string s.
+        
+		ans = ""
+        for i in range(len(s)):
+            ans += di[i]
+        return ans
