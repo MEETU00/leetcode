@@ -9,3 +9,11 @@ class Solution:
         for i in range(len(s)):
             ans += di[i]
         return ans
+
+
+class Solution:
+    def restoreString(self, s: str, indices: List[int]) -> str:
+        shuffle_list = [None] * len(s)
+        for k, chr in enumerate(s):
+            shuffle_list[indices[k]] = chr
+        return ''.join(shuffle_list)
