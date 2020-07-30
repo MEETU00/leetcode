@@ -17,3 +17,14 @@ class Solution:
         for k, chr in enumerate(s):
             shuffle_list[indices[k]] = chr
         return ''.join(shuffle_list)
+
+
+class Solution:
+    def restoreString(self, s: str, indices: List[int]) -> str:
+        r = list(s)
+        print(r)
+        for i,j in enumerate(indices):
+            r[j] = s[i]
+        r = ''.join(r)
+        return r
+	
