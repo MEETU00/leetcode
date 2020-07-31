@@ -11,12 +11,12 @@ class Solution:
         return ans
 
 
-class Solution:
+class Solution:                                                                                      
     def restoreString(self, s: str, indices: List[int]) -> str:
-        shuffle_list = [None] * len(s)
-        for k, chr in enumerate(s):
-            shuffle_list[indices[k]] = chr
-        return ''.join(shuffle_list)
+        res = [None]/[''] * len(s)
+        for index, chr in enumerate(s):
+            res[indices[index]] = chr
+        return ''.join(res)
 
 
 class Solution:
