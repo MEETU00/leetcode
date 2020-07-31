@@ -3,3 +3,13 @@ class Solution:
         s, p = 0, 1
         for i in str(n): s += int(i); p *= int(i)
         return p - s
+        
+ 
+ class solution
+     def subtractProductAndSum(self, n: int) -> int:
+     product = 1
+     Sum = 0
+     for i in (str(n)):
+        product *= int(i)
+        Sum += int(i)
+    return(product - Sum)
