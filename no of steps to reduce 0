@@ -6,7 +6,5 @@ class Solution:
                 num=num//2
             else:
                 num = num-1
-                
-            numi +=1
-       
-       return numi
+                numi +=1
+        return numi
