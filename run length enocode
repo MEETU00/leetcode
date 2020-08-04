@@ -9,3 +9,18 @@ class Solution:
             result+=[val]*freq
             print(i)
         return result
+
+
+
+class Solution:
+    def decompressRLElist(self, nums: List[int]) -> List[int]:
+        return sum(([nums[i+1]]*nums[i] for i in range(0, len(nums), 2)), [])
+        
+
+
+class Solution:
+    def decompressRLElist(self, nums: List[int]) -> List[int]:
+        ans = []
+        for i in range(0, len(nums), 2): 
+            ans.extend(nums[i] * [nums[i+1]]) #repetition & value 
+        return ans         
