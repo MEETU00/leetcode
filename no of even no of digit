@@ -1,0 +1,24 @@
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        total_count = 0
+        for i in nums:
+            count = 0
+            while i > 0:
+                i = i // 10
+                count += 1
+            if count % 2 == 0:
+                total_count += 1
+        return total_count
+        
+res = 0
+        
+        for i in nums:
+            
+            j = str(i)
+            z = len (j)
+            
+            if z%2 == 0:
+                
+                res += 1
+                
+        return res        
