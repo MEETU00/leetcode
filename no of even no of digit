@@ -10,6 +10,8 @@ class Solution:
                 total_count += 1
         return total_count
         
+
+
 class Solution:
     def findNumbers(self, nums: List[int]) -> int:
         count = 0
